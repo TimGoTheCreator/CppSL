@@ -18,9 +18,9 @@ int main() {
     int age;
     input("Enter your age: ", age);
 
-    print("Hello, ");
+    printc("Hello, ");
     printnl(name);
-    print("You are ");
+    printc("You are ");
     printnl(age);
 }
 ```
