@@ -20,9 +20,9 @@ inline void printnl(const T& x) {
     std::cout << x << std::endl;
 }
 
-// Print (no NL)
+// Print (no NL), printc instead of print due to C++23 syntax conflicts.
 template<typename T>
-inline void print(const T& x) {
+inline void printc(const T& x) {
     std::cout << x;
 }
 
@@ -48,3 +48,4 @@ inline void input(const std::string& prompt, T& var) {
 
 
 #endif
+
