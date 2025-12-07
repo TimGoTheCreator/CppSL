@@ -32,7 +32,7 @@ inline void input(const std::string& prompt, std::string& var) {
     std::getline(std::cin, var);
 }
 
-// Template for numeric types (int, double, float, long, etc) and other operator>> types
+// Template for numeric types (int, double, float, long, etc) and other operator>> types, use an overload to accomplish same name in num + str.
 template <typename T>
 inline void input(const std::string& prompt, T& var) {
     std::cout << prompt;
@@ -48,4 +48,5 @@ inline void input(const std::string& prompt, T& var) {
 
 
 #endif
+
 
