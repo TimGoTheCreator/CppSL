@@ -11,7 +11,7 @@
 
 namespace csl {
 
-inline std::string_view InputStringNumError =
+inline std::string InputStringOnNumError =
     "Invalid input! Please check your numeric input!";
 
 // Newline print, printnl instead of println due to C++23 syntax conflicts.
@@ -39,7 +39,7 @@ inline void input(const std::string& prompt, T& var) {
     while (!(std::cin >> var)) {
         std::cin.clear();
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Discard invalid input
-        std::cout << InputStringNumError;
+        std::cout << InputStringOnNumError;
     }
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Remove leftover NL
 }
@@ -48,5 +48,6 @@ inline void input(const std::string& prompt, T& var) {
 
 
 #endif
+
 
 
