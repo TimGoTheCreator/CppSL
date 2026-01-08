@@ -3,7 +3,8 @@
 ![License](https://img.shields.io/badge/license-Apache%202.0-green.svg)
 ![Header-only](https://img.shields.io/badge/design-header--only-lightgrey.svg)
 
-Single-header library (`cppsl.h`) to simplify C++ console I/O.
+CppSL is a small, beginner-friendly, **single-header** C++ library that simplifies
+basic console input and output, with built-in validation for numeric input.
 
 Example:
 
@@ -18,9 +19,9 @@ int main() {
     int age;
     input("Enter your age: ", age);
 
-    printc("Hello, ");
-    printnl(name);
-    printc("You are ");
-    printnl(age);
+    out("Hello, ");
+    outln(name);
+    out("You are ");
+    outln(age);
 }
 ```
